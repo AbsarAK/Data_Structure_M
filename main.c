@@ -22,6 +22,7 @@ int main()
         printf("7.add at before node\n");
         printf("8.add at after node\n");
         printf("9.add at position\n");
+        printf("10.delete an elemnt\n");
         
         scanf("%d",&choice);
         
@@ -36,7 +37,8 @@ int main()
             case 7:printf("enter the element to be inserted\n");scanf("%d",&data);printf("enter the element before which to be inserted\n");scanf("%d",&item);start=addbefore(start,data,item);break;
             case 8:printf("enter the element to be inserted\n");scanf("%d",&data);printf("enter the element after which to be inserted\n");scanf("%d",&item);start=addafter(start,data,item);break;
             case 9:printf("enter the element to be inserted\n");scanf("%d",&data);printf("enter the position \n");scanf("%d",&pos);start=addatpos(start,data,pos);break;
-            default:printf("wrong choice\n");
+            case 10:printf("enter the element to be deleted\n");scanf("%d",&data);
+            default:printf("wrong choice\n");start=del(start,data);break;
         }
 
     }

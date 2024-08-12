@@ -1,3 +1,10 @@
+/******************************************************************************
+
+linklist.h
+
+*******************************************************************************/
+
+
 #ifndef LINKLIST_H
 #define LINKLIST_H
 
@@ -15,9 +22,10 @@ void search(struct node *start,int data);
 struct node *addbefore(struct node *start,int data,int item);
 struct node *addafter(struct node *start,int data,int item);
 struct node *addatpos(struct node *start,int data,int pos);
+struct node *del(struct node *start,int data);
 
 
 
 
 
-#endif 
+#endif  
